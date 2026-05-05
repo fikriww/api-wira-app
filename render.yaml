@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: api-wira-app
+    env: docker
+    plan: free # Change to 'starter' if memory is an issue
+    region: singapore # Or your preferred region
+    envVars:
+      - key: PORT
+        value: 8000
